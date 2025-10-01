@@ -2,7 +2,7 @@
 
 const int	Fixed::fractional_bits = 8;
 
-Fixed::Fixed() : raw(5)
+Fixed::Fixed() : raw(0)
 {
 	std::cout << "Default constructor called" << std::endl;
 }
