@@ -12,11 +12,6 @@ bool bsp(Point const a, Point const b, Point const c, Point const point)
 	Fixed	cross1 = getCrossProduct(a, b, point);
 	Fixed	cross2 = getCrossProduct(b, c, point);
 	Fixed	cross3 = getCrossProduct(c, a, point);
-	// bool	neg = cross1 < 0 || cross2 < 0 || cross3 < 0;
-	// bool	pos = cross1 > 0 || cross2 > 0 || cross3 > 0;
-	// bool	zero = cross1 == 0 || cross2 == 0 || cross3 == 0;
-	// bool	pointIsInside = !((neg && pos) || zero);
-	// return (pointIsInside);
 	if (cross1 < 0 && cross2 < 0 && cross3 < 0)
 	{
 		return (true);
